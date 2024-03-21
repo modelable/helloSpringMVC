@@ -11,6 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  Hello World
+  <%-- 현재 웹 애플리케이션의 컨텍스트 경로를 반환하는 EL 표현식 placeholder --%>
+  <p><a href="${pageContext.request.contextPath}/offers"> Show current offers</a></p>
   </body>
 </html>

@@ -10,7 +10,8 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            /WEB-INF/spring/root-context.xml
+            /WEB-INF/spring/appServlet/service-context.xml
+            /WEB-INF/spring/appServlet/dao-context.xml <!-- ContextLoaderListener의 설정 파일-->
         </param-value>
     </context-param>
 
