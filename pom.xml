@@ -16,7 +16,9 @@
         <org.springframework-version>5.3.30</org.springframework-version>
         <org.aspectj-version>1.6.10</org.aspectj-version>
         <org.slf4j-version>1.7.30</org.slf4j-version>
+        <org.spring.security-version>5.7.7</org.spring.security-version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -28,6 +30,24 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${org.springframework-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${org.spring.security-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${org.spring.security-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${org.spring.security-version}</version>
         </dependency>
 
         <dependency>
