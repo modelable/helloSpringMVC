@@ -17,7 +17,6 @@ import java.util.List;
 @Controller
 public class OfferController {
 
-    // Controller는 Service를 의존(사용)하고, Service는 Dao에 접근한다.
     @Autowired
     private OfferService offerService;
 
@@ -41,7 +40,6 @@ public class OfferController {
     @PostMapping("/docreate")
     public String doCreate(Model model, @Valid Offer offer, BindingResult result) {
 
-        // System.out.println(offer);
         if (result.hasErrors()) {
             System.out.println("== Form data does not validated ==");
 
