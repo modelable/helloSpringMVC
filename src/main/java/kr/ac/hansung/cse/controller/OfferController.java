@@ -10,7 +10,6 @@ import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.naming.Binding;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -53,7 +52,7 @@ public class OfferController {
         }
 
         // Controller -> Service 호출 -> Dao 호출
-        offerService.insert(offer);
+        offerService.insertOffer(offer);
 
         return "offercreated";
     }
